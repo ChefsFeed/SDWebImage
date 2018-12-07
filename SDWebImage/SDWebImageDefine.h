@@ -156,7 +156,7 @@ typedef NS_OPTIONS(NSUInteger, SDWebImageOptions) {
     SDWebImageFromLoaderOnly = 1 << 16,
     
     /**
-     * By default, when you use `SDWebImageTransition` to do some view transition after the image load finished, this transition is only applied for image download from the network. This mask can force to apply view transition for memory and disk cache as well.
+     * By default, when you use `SDWebImageTransition` to do some view transition after the image load finished, this transition is applied for image download from the network and disk cache. This mask can force to apply view transition for memory as well.
      */
     SDWebImageForceTransition = 1 << 17,
     

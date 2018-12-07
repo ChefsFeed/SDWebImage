@@ -143,7 +143,7 @@ const int64_t SDWebImageProgressUnitCountUnknown = 1LL;
 #if SD_UIKIT || SD_MAC
             // check whether we should use the image transition
             SDWebImageTransition *transition = nil;
-            if (finished && (options & SDWebImageForceTransition || cacheType == SDImageCacheTypeNone)) {
+            if (finished && (options & SDWebImageForceTransition || cacheType != SDImageCacheTypeMemory)) {
                 transition = sself.sd_imageTransition;
             }
 #endif
